@@ -1,0 +1,418 @@
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :distTar UP-TO-DATE
+> Task :distZip SKIPPED
+> Task :assemble UP-TO-DATE
+> Task :checkstyleMain NO-SOURCE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :checkstyleTest NO-SOURCE
+> Task :doJacocoOfflineInstrumentation UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :jacocoTestCoverageVerification SKIPPED
+> Task :jacocoTestReport SKIPPED
+> Task :pmdMain NO-SOURCE
+> Task :pmdTest NO-SOURCE
+> Task :spotbugsMain NO-SOURCE
+> Task :spotbugsTest NO-SOURCE
+> Task :spotlessDocumentation UP-TO-DATE
+> Task :spotlessDocumentationCheck UP-TO-DATE
+> Task :spotlessJava UP-TO-DATE
+> Task :spotlessJavaCheck UP-TO-DATE
+> Task :spotlessMisc UP-TO-DATE
+> Task :spotlessMiscCheck UP-TO-DATE
+> Task :spotlessVividus UP-TO-DATE
+> Task :spotlessVividusCheck UP-TO-DATE
+> Task :spotlessCheck UP-TO-DATE
+
+> Task :testVividusInitialization
+2021-07-26 11:07:20,429 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /defaults
+2021-07-26 11:07:20,451 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /
+2021-07-26 11:07:20,504 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /profile/web/desktop/chrome
+2021-07-26 11:07:20,511 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /environment/test
+2021-07-26 11:07:20,516 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /suite/web
+2021-07-26 11:07:20,519 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /deprecated
+2021-07-26 11:07:26,185 [main] WARN  org.apache.tika.parser.SQLite3Parser - org.xerial's sqlite-jdbc is not loaded.
+Please provide the jar on your classpath to parse sqlite files.
+See tika-parsers/pom.xml for the correct version.
+
+> Task :check
+> Task :build
+
+> Task :printSteps
+2021-07-26 11:07:29,285 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /defaults
+2021-07-26 11:07:29,306 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /
+2021-07-26 11:07:29,355 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /profile/web/desktop/chrome
+2021-07-26 11:07:29,361 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /environment/test
+2021-07-26 11:07:29,365 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /suite/web
+2021-07-26 11:07:29,368 [main] INFO  org.vividus.configuration.ConfigurationResolver - Loading properties from /deprecated
+vividus                                            Given I initialize the $scopes variable `$variableName` using template `$templatePath` with parameters:$templateParameters
+vividus                                            Then I verify assertions matching '$assertionPattern'
+vividus                                            Then `$value` matches `$pattern`
+vividus                                            Then `$variable1` is $comparisonRule `$variable2`
+vividus                                            Then `$variable` is equal to table ignoring extra columns:$table
+vividus                                            Then `$variable` is equal to table:$table
+vividus                                            When I '$number' times do:$stepsToExecute
+vividus                                            When I `$number` times do:$stepsToExecute
+vividus                                            When I create a file with the pathname `$pathname` and the content `$fileContent`
+vividus                                            When I create temporary file with name '$name' and content '$content' and put path to '$scopes' variable with name '$pathVariable'
+vividus                                            When I execute steps at most $max times while variable '$variableName' is $comparisonRule '$expectedValue':$stepsToExecute
+vividus                                            When I execute steps at most $max times while variable `$variableName` is $comparisonRule `$expectedValue`:$stepsToExecute
+vividus                                            When I execute steps while counter is $comparisonRule '$limit' with increment '$increment' starting from '$seed':$stepsToExecute
+vividus                                            When I execute steps while counter is $comparisonRule `$limit` with increment `$increment` starting from `$seed`:$stepsToExecute
+vividus                                            When I execute steps with delay '$delay' at most $max times while variable '$variableName' is $comparisonRule '$expectedValue':$stepsToExecute
+vividus                                            When I execute steps with delay `$delay` at most $max times while variable `$variableName` is $comparisonRule `$expectedValue`:$stepsToExecute
+vividus                                            When I initialize $scopes variable `$variableName` with values:$examplesTable
+vividus                                            When I initialize the $scopes variable `$variableName` with value `$variableValue`
+vividus                                            When I wait `$period` for debug
+vividus                                            When the condition '$condition' is true I do$stepsToExecute
+vividus                                            When the condition `$condition` is true I do$stepsToExecute
+vividus                                            When variable '$name' is not set I do:$stepsToExecute
+vividus                                            When variable `$name` is not set I do:$stepsToExecute
+vividus-extension-selenium                         Then element located `$locator` exists for `$duration` duration
+vividus-extension-selenium                         Then elements located `$locator` are sorted by text in $sortingOrder order
+vividus-extension-selenium                         Then number of $state elements found by `$locator` is $comparisonRule `$quantity`
+vividus-extension-selenium                         Then number of elements found by `$locator` is $comparisonRule `$quantity`
+vividus-extension-selenium                         When I change context to element located `$locator`
+vividus-extension-selenium                         When I navigate back
+vividus-extension-selenium                         When I reset context
+vividus-extension-selenium                         When I save `$attributeName` attribute value of context element to $scopes variable `$variableName`
+vividus-extension-selenium                         When I save `$attributeName` attribute value of element located `$locator` to $scopes variable `$variableName`
+vividus-extension-selenium                         When I save number of elements located `$locator` to $scopes variable `$variableName`
+vividus-extension-selenium                         When I save text of context element to $scopes variable `$variableName`
+vividus-extension-selenium                         When I wait until element located `$locator` appears
+vividus-extension-selenium                         When I wait until element located `$locator` disappears
+vividus-plugin-rest-api                            Given multipart request:$requestParts
+vividus-plugin-rest-api                            Given request body: $content
+vividus-plugin-rest-api                            Then HTTP resources are valid:$resources
+vividus-plugin-rest-api                            Then JSON element by JSON path `$jsonPath` is equal to `$expectedData`$options
+vividus-plugin-rest-api                            Then JSON element from `$json` by JSON path `$jsonPath` is equal to `$expectedData`$options
+vividus-plugin-rest-api                            Then content type of response body $comparisonRule `$contentType`
+vividus-plugin-rest-api                            Then number of JSON elements by JSON path `$jsonPath` is $comparisonRule $elementsNumber
+vividus-plugin-rest-api                            Then number of JSON elements from `$json` by JSON path `$jsonPath` is $comparisonRule $elementsNumber
+vividus-plugin-rest-api                            Then response header '$httpHeaderName' contains attribute: $attributes
+vividus-plugin-rest-api                            Then server `$hostname` supports secure protocols that $rule `$protocols`
+vividus-plugin-rest-api                            Then size of decompressed response body is $comparisonRule `$sizeInBytes`
+vividus-plugin-rest-api                            Then the connection is secured using $securityProtocol protocol
+vividus-plugin-rest-api                            Then the number of the response headers with the name '$headerName' is $comparisonRule $value
+vividus-plugin-rest-api                            Then the response archive contains entries with the names:$parameters
+vividus-plugin-rest-api                            Then the response body $comparisonRule '$content'
+vividus-plugin-rest-api                            Then the response body $validationRule resource at '$resourcePath'
+vividus-plugin-rest-api                            Then the response code is $comparisonRule '$responseCode'
+vividus-plugin-rest-api                            Then the response does not contain body
+vividus-plugin-rest-api                            Then the response time should be less than '$responseTimeThresholdMs' milliseconds
+vividus-plugin-rest-api                            Then the value of the response header "$httpHeaderName" $comparisonRule "$value"
+vividus-plugin-rest-api                            Then the value of the response header '$httpHeaderName' $comparisonRule '$value'
+vividus-plugin-rest-api                            When I add request headers:$headers
+vividus-plugin-rest-api                            When I change value of all HTTP cookies with name `$cookieName` to `$newCookieValue`
+vividus-plugin-rest-api                            When I find $comparisonRule `$elementsNumber` JSON elements by `$jsonPath` and for each element do$stepsToExecute
+vividus-plugin-rest-api                            When I find $comparisonRule `$elementsNumber` JSON elements from `$json` by `$jsonPath` and for each element do$stepsToExecute
+vividus-plugin-rest-api                            When I issue a HTTP $httpMethod request for a resource with the URL '$url'
+vividus-plugin-rest-api                            When I save JSON element from `$json` by JSON path `$jsonPath` to $scopes variable `$variableName`
+vividus-plugin-rest-api                            When I save JSON element from context by JSON path `$jsonPath` to $scopes variable `$variableName`
+vividus-plugin-rest-api                            When I save content of the response archive entries to the variables:$parameters
+vividus-plugin-rest-api                            When I save number of elements from `$json` found by JSON path `$jsonPath` to $scopes variable `$variableName`
+vividus-plugin-rest-api                            When I save response body to the $scopes variable '$variableName'
+vividus-plugin-rest-api                            When I save response header '$httpHeaderName' value to $scopes variable '$variableName'
+vividus-plugin-rest-api                            When I save value of HTTP cookie with name `$cookieName` to $scopes variable `$variableName`
+vividus-plugin-rest-api                            When I send HTTP $httpMethod to the relative URL '$relativeURL'
+vividus-plugin-rest-api                            When I set HTTP request configuration:$configItems
+vividus-plugin-rest-api                            When I set number of elements found by JSON path `$jsonPath` to $scopes variable `$variableName`
+vividus-plugin-rest-api                            When I set request headers:$headers
+vividus-plugin-rest-api                            When I wait for presence of element by `$jsonPath` for `$duration` duration retrying $retryTimes times$stepsToExecute
+vividus-plugin-rest-api                            When I wait for presence of element by `$jsonPath` with `$pollingInterval` polling interval retrying $retryTimes times$stepsToExecute
+vividus-plugin-rest-api                            When I wait for response code `$responseCode` for `$duration` duration retrying $retryTimes times$stepsToExecute
+vividus-plugin-visual                              When I $actionType baseline with `$name`
+vividus-plugin-visual                              When I $actionType baseline with `$name` ignoring:$ignoredElements
+vividus-plugin-visual                              When I $actionType baseline with `$name` ignoring:$ignoredElements using screenshot configuration:$screenshotConfiguration
+vividus-plugin-visual                              When I $actionType baseline with `$name` using screenshot configuration:$screenshotConfiguration
+vividus-plugin-web-app                             Given I am on a page with the URL '$pageURL'
+vividus-plugin-web-app                             Given I am on the main application page
+vividus-plugin-web-app                             Then a [$state] radio button with the name '$radioOption' exists
+vividus-plugin-web-app                             Then a cookie with the name '$cookieName' is not set
+vividus-plugin-web-app                             Then a cookie with the name '$cookieName' is set
+vividus-plugin-web-app                             Then a javascript file with the name '$jsFileName' is included in the source code
+vividus-plugin-web-app                             Then a javascript with the text '$jsText' is included in the source code
+vividus-plugin-web-app                             Then a javascript with the textpart '$jsTextPart' is included in the source code
+vividus-plugin-web-app                             Then a radio button with the name '$radioOption' exists
+vividus-plugin-web-app                             Then alert does not appear in `$timeout`
+vividus-plugin-web-app                             Then an alert is not present
+vividus-plugin-web-app                             Then an alert is present
+vividus-plugin-web-app                             Then an element contains the radio buttons: $radioOptions
+vividus-plugin-web-app                             Then an element with the id '$id' disappears
+vividus-plugin-web-app                             Then context contains list of link items with the text and link: $expectedLinkItems
+vividus-plugin-web-app                             Then context contains list of link items with the text: $expectedLinkItems
+vividus-plugin-web-app                             Then dropdown located `$locator` contains options: $options
+vividus-plugin-web-app                             Then dropdown located `$locator` exists and selected option is `$option`
+vividus-plugin-web-app                             Then each element located `$locator` has same `$dimension`
+vividus-plugin-web-app                             Then each element with locator `$elementLocator` has `$number` child elements with locator `$childLocator`
+vividus-plugin-web-app                             Then element located '$locator' disappears in '$timeout'
+vividus-plugin-web-app                             Then favicon with src containing `$srcpart` exists
+vividus-plugin-web-app                             Then field located `$locator` does not exist
+vividus-plugin-web-app                             Then field located `$locator` exists
+vividus-plugin-web-app                             Then json generated by javascript `$script` contains field with name `$fieldName' and value `$value`
+vividus-plugin-web-app                             Then local storage item with `$key` does not exist
+vividus-plugin-web-app                             Then number of HTTP $httpMethods requests with URL pattern `$urlPattern` is $comparisonRule `$number`
+vividus-plugin-web-app                             Then number of invisible elements `$locator` is $comparisonRule `$quantity`
+vividus-plugin-web-app                             Then page is scrolled to element located `$locator`
+vividus-plugin-web-app                             Then the context element has a width of '$widthInPerc'% relative to the parent element
+vividus-plugin-web-app                             Then the context element has the CSS property '$cssName' containing '$cssValue'
+vividus-plugin-web-app                             Then the context element has the CSS property '$cssName'='$cssValue'
+vividus-plugin-web-app                             Then the context element is $focusState
+vividus-plugin-web-app                             Then the context has a width of '$widthInPerc'%
+vividus-plugin-web-app     DEPRECATED              Then the element with the xpath '$xpath' exists for '$seconds' seconds
+vividus-plugin-web-app                             Then the host of the page URL is '$host'
+vividus-plugin-web-app                             Then the page has the relative URL '$relativeURL'
+vividus-plugin-web-app                             Then the page load time should be less than '$pageLoadTimeThreshold' milliseconds
+vividus-plugin-web-app                             Then the page title $comparisonRule '$text'
+vividus-plugin-web-app                             Then the page with the URL '$URL' is loaded
+vividus-plugin-web-app                             Then the page with the URL containing '$URLpart' is loaded
+vividus-plugin-web-app                             Then the text '$text' does not exist
+vividus-plugin-web-app                             Then the text '$text' exists
+vividus-plugin-web-app                             Then the text matches '$regex'
+vividus-plugin-web-app                             Then the value '$value' is selected in a slider by the xpath '$xpath'
+vividus-plugin-web-app                             Then there are browser console $logEntries by regex `$regex`
+vividus-plugin-web-app                             Then there are no browser console $logEntries
+vividus-plugin-web-app                             Then there are no browser console $logEntries by regex '$regex'
+vividus-plugin-web-app                             When I $alertAction alert with message which $comparisonRule `$message`
+vividus-plugin-web-app                             When I $checkBoxAction checkbox located by `$checkboxLocator`
+vividus-plugin-web-app                             When I $checkboxAction all checkboxes located by `$checkboxesLocator`
+vividus-plugin-web-app                             When I add `$option` to selection in dropdown located `$locator`
+vividus-plugin-web-app                             When I add `$text` to field located `$locator`
+vividus-plugin-web-app                             When I add headers to proxied requests with URL pattern which $comparisonRule `$url`:$headers
+vividus-plugin-web-app                             When I capture HTTP $httpMethods request with URL pattern `$urlPattern` and save URL query to $scopes variable `$variableName`
+vividus-plugin-web-app                             When I capture HTTP $httpMethods request with URL pattern `$urlPattern` and save URL to $scopes variable `$variableName`
+vividus-plugin-web-app                             When I capture HTTP $httpMethods request with URL pattern `$urlPattern` and save request data to $scopes variable `$variableName`
+vividus-plugin-web-app                             When I clear field located `$locator`
+vividus-plugin-web-app                             When I clear field located `$locator` using keyboard
+vividus-plugin-web-app                             When I clear proxy log
+vividus-plugin-web-app                             When I clear proxy mocks
+vividus-plugin-web-app                             When I click on all elements located `$locator`
+vividus-plugin-web-app                             When I click on an element '$locator' then the page does not refresh
+vividus-plugin-web-app                             When I click on element located `$locator`
+vividus-plugin-web-app                             When I close the current window
+vividus-plugin-web-app                             When I drag element located `$draggable` and drop it at $location of element located `$target`
+vividus-plugin-web-app                             When I enter `$text` in field located `$locator`
+vividus-plugin-web-app                             When I execute javascript `$jsCode` with arguments:$args
+vividus-plugin-web-app                             When I execute sequence of actions: $actions
+vividus-plugin-web-app                             When I find $comparisonRule '$number' elements $locator and while they exist do up to $iterationLimit iteration of$stepsToExecute
+vividus-plugin-web-app                             When I find $comparisonRule '$number' elements by $locator and for each element do$stepsToExecute
+vividus-plugin-web-app                             When I find $comparisonRule `$number` elements `$locator` and while they exist do up to $iterationLimit iteration of$stepsToExecute
+vividus-plugin-web-app                             When I find $comparisonRule `$number` elements by `$locator` and for each element do$stepsToExecute
+vividus-plugin-web-app                             When I get the URL path and set it to the $scopes variable '$variable'
+vividus-plugin-web-app                             When I get the URL value of a video with sequence number '$number' and set it to the '$scopes' variable '$variable'
+vividus-plugin-web-app                             When I get the URL value of a video with the name '$name' and set it to the '$scopes' variable '$variable'
+vividus-plugin-web-app                             When I get the number of open windows and set it to the $scopes variable '$variable'
+vividus-plugin-web-app                             When I get the value from the URL and set it to the '$scopes' variable '$variable'
+vividus-plugin-web-app                             When I go to the relative URL '$relativeURL'
+vividus-plugin-web-app                             When I hover mouse over element located `$locator`
+vividus-plugin-web-app                             When I mock HTTP $httpMethods responses with request URL which $comparisonRule `$url` using response code `$responseCode`, content `$payload` and headers:$headers
+vividus-plugin-web-app                             When I mock HTTP responses with request URL which $comparisonRule `$url` using response code `$responseCode` and headers:$headers
+vividus-plugin-web-app                             When I mock HTTP responses with request URL which $comparisonRule `$url` using response code `$responseCode`, content `$payload` and headers:$headers
+vividus-plugin-web-app                             When I open URL `$pageUrl` in new window
+vividus-plugin-web-app                             When I pause video in the video player with the name '$videoPlayerName'
+vividus-plugin-web-app                             When I perform async javascript '$jsCode' and save result to the '$scopes' variable '$variableName'
+vividus-plugin-web-app                             When I perform javascript '$jsCode' and save result to the '$scopes' variable '$variableName'
+vividus-plugin-web-app                             When I perform right click on element located `$locator`
+vividus-plugin-web-app                             When I play video in the video player with the name '$videoPlayerName'
+vividus-plugin-web-app                             When I press $keys on keyboard
+vividus-plugin-web-app                             When I refresh the page
+vividus-plugin-web-app                             When I remove a cookie with the name '$cookieName' from the current domain
+vividus-plugin-web-app                             When I remove all cookies from the current domain
+vividus-plugin-web-app                             When I rewind time to '$number' seconds in the video player with the name '$videoPlayerName'
+vividus-plugin-web-app                             When I save cookie with name `$cookieName` as JSON to $scopes variable `$variableName`
+vividus-plugin-web-app                             When I save local storage item with key `$key` to $scopes variable `$variable`
+vividus-plugin-web-app                             When I save table to $scopes variable '$variableName'
+vividus-plugin-web-app                             When I save value of cookie with name `$name` to $scopes variable `$variableName`
+vividus-plugin-web-app                             When I scroll context to $scrollDirection edge
+vividus-plugin-web-app                             When I scroll element located `$locator` into view
+vividus-plugin-web-app                             When I select `$option` in dropdown located `$locator`
+vividus-plugin-web-app                             When I select a radio button with the name '$radioOption'
+vividus-plugin-web-app                             When I select element located `$locator` and upload file `$filePath`
+vividus-plugin-web-app                             When I select the value '$value' in a slider by the xpath '$xpath'
+vividus-plugin-web-app                             When I set all cookies for current domain:$parameters
+vividus-plugin-web-app                             When I set focus to the context element
+vividus-plugin-web-app                             When I set the number of elements found by the attribute '$attributeType'='$attributeValue' to the '$scopes' variable '$variableName'
+vividus-plugin-web-app                             When I simulate drag of element located `$draggable` and drop at element located `$target`
+vividus-plugin-web-app                             When I stop page loading
+vividus-plugin-web-app                             When I switch back to the page
+vividus-plugin-web-app                             When I switch to a new window
+vividus-plugin-web-app                             When I switch to frame located `$locator`
+vividus-plugin-web-app                             When I switch to window with title that $stringComparisonRule `$windowName`
+vividus-plugin-web-app                             When I take a screenshot
+vividus-plugin-web-app                             When I take a screenshot to '$path'
+vividus-plugin-web-app                             When I wait `$duration` until window with title that $comparisonRule `$title` appears and switch to it
+vividus-plugin-web-app                             When I wait `$duration` with `$pollingDuration` polling until element located `$locator` becomes $state
+vividus-plugin-web-app                             When I wait until HTTP $httpMethods request with URL pattern `$urlPattern` exists in proxy log
+vividus-plugin-web-app                             When I wait until a frame with the name '$frameName' appears
+vividus-plugin-web-app                             When I wait until a frame with the name '$frameName' appears and I switch to it
+vividus-plugin-web-app                             When I wait until an alert appears
+vividus-plugin-web-app                             When I wait until an alert disappears
+vividus-plugin-web-app                             When I wait until an element with the tag '$elementTag' and attribute '$attributeType'='$attributeValue' appears
+vividus-plugin-web-app                             When I wait until an element with the tag '$elementTag' and attribute '$attributeType'='$attributeValue' disappears
+vividus-plugin-web-app                             When I wait until element located `$locator` contains text '$text'
+vividus-plugin-web-app                             When I wait until element located `$locator` is stale
+vividus-plugin-web-app                             When I wait until scroll is finished
+vividus-plugin-web-app                             When I wait until state of element located `$locator` is $state
+vividus-plugin-web-app                             When I wait until the page has the title '$title'
+vividus-plugin-web-app                             When I wait until the page title contains the text '$text'
+                           COMPOSITE IN STEPS FILE Then a JSON element by the JSON path '$jsonPath' exists
+                           COMPOSITE IN STEPS FILE Then a JSON element by the JSON path '$jsonPath' is equal to '$expectedData'$options
+                           COMPOSITE IN STEPS FILE Then a JSON element from '$json' by the JSON path '$jsonPath' is equal to '$expectedData'$options
+                           COMPOSITE IN STEPS FILE Then a [$state] button with the name '$buttonName' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] drop down with the name '$dropDownName' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] element with the attribute '$attributeType'='$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] element with the name '$elementName' and text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] element with the name '$elementName' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] element with the tag '$elementTag' does not exist
+                           COMPOSITE IN STEPS FILE Then a [$state] element with the tag '$elementTag' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] field with the name '$fieldName' and placeholder text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] field with the name '$fieldName' and text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] field with the name '$fieldName' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] frame with the attribute '$attributeType'='$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] image with the src '$imageSrc' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] image with the src '$src' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] image with the src containing '$srcpart' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] image with the tooltip '$tooltipImage' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with text '$text' and URL containing '$URLpart' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the URL '$URL' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the URL '$URL' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the text '$text' and URL '$URL' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the text '$text' and URL '$URL' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the text '$text' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a [$state] link with the tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a button with image with the src '$imageSrc' exists
+                           COMPOSITE IN STEPS FILE Then a button with the name '$buttonName' does not exist
+                           COMPOSITE IN STEPS FILE Then a button with the name '$buttonName' exists
+                           COMPOSITE IN STEPS FILE Then a button with the tooltip '$tooltip' and image with the src '$imageSrc' exists
+                           COMPOSITE IN STEPS FILE Then a drop down with the name '$dropDownName' and text '$dropDownText' exists
+                           COMPOSITE IN STEPS FILE Then a drop down with the name '$dropDownName' contains the items: $dropDownItems
+                           COMPOSITE IN STEPS FILE Then a drop down with the name '$dropDownName' does not exist
+                           COMPOSITE IN STEPS FILE Then a drop down with the name '$dropDownName' exists
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' and placeholder text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' and text '$text' does not exist
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' and text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' and text containing '$textpart' exists
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' does not exist
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' exists
+                           COMPOSITE IN STEPS FILE Then a field with the name '$fieldName' placeholder text '$text' does not exist
+                           COMPOSITE IN STEPS FILE Then a frame with the attribute '$attributeType'='$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then a link by $locator exists
+                           COMPOSITE IN STEPS FILE Then a link tag with href '$href' exists
+                           COMPOSITE IN STEPS FILE Then a link with the URL '$URL' and tooltip '$tooltip' does not exist
+                           COMPOSITE IN STEPS FILE Then a link with the URL '$URL' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a link with the URL '$URL' does not exist
+                           COMPOSITE IN STEPS FILE Then a link with the URL '$URL' exists
+                           COMPOSITE IN STEPS FILE Then a link with the URL containing '$URLpart' exists
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' and URL '$URL' and tooltip '$tooltip' does not exist
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' and URL '$URL' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' and URL '$URL' does not exist
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' and URL '$URL' exists
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' and URL containing '$URLpart' exists
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' does not exist
+                           COMPOSITE IN STEPS FILE Then a link with the text '$text' exists
+                           COMPOSITE IN STEPS FILE Then a link with the tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then an element by the cssSelector '$cssSelector' exists
+                           COMPOSITE IN STEPS FILE Then an element by the xpath '$xpath' does not exist
+                           COMPOSITE IN STEPS FILE Then an element by the xpath '$xpath' exists
+                           COMPOSITE IN STEPS FILE Then an element with the attribute '$attributeType' containing '$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then an element with the attribute '$attributeType'='$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then an element with the name '$elementName' and text '$text' exists
+                           COMPOSITE IN STEPS FILE Then an element with the name '$elementName' containing text '$text' exists
+                           COMPOSITE IN STEPS FILE Then an element with the name '$elementName' disappears in '$timeout' seconds
+                           COMPOSITE IN STEPS FILE Then an element with the name '$elementName' does not exist
+                           COMPOSITE IN STEPS FILE Then an element with the name '$elementName' exists
+                           COMPOSITE IN STEPS FILE Then an element with the tag '$elementTag' and attribute '$attributeType'='$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then an element with the tag '$elementTag' and text '$text' exists
+                           COMPOSITE IN STEPS FILE Then an image with the src '$imageSrc' and tooltip '$tooltip' exists
+                           COMPOSITE IN STEPS FILE Then an image with the src '$src' does not exist
+                           COMPOSITE IN STEPS FILE Then an image with the src '$src' exists
+                           COMPOSITE IN STEPS FILE Then an image with the src containing '$srcpart' exists
+                           COMPOSITE IN STEPS FILE Then an image with the tooltip '$tooltip' and src containing '$srcpart' exists
+                           COMPOSITE IN STEPS FILE Then an image with the tooltip '$tooltipImage' exists
+                           COMPOSITE IN STEPS FILE Then at least one element by the xpath '$xpath' exists
+                           COMPOSITE IN STEPS FILE Then at least one element with the attribute '$attributeType'='$attributeValue' exists
+                           COMPOSITE IN STEPS FILE Then each element by the xpath '$elementXpath' has '$number' child elements by the xpath '$childXpath'
+                           COMPOSITE IN STEPS FILE Then each element by the xpath '$xpath' has same '$dimension'
+                           COMPOSITE IN STEPS FILE Then invisible element by xpath '$xpath' exists
+                           COMPOSITE IN STEPS FILE Then the number of JSON elements by the JSON path '$jsonPath' is $comparisonRule $elementsNumber
+                           COMPOSITE IN STEPS FILE Then the number of elements found by the xpath '$xpath' is $comparisonRule '$quantity'
+                           COMPOSITE IN STEPS FILE Then the page title contains the text '$text'
+                           COMPOSITE IN STEPS FILE Then the page title is '$pageTitle'
+                           COMPOSITE IN STEPS FILE When I add '$text' to a field by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I add '$text' to a field with the name '$fieldName'
+                           COMPOSITE IN STEPS FILE When I add '$text' to selection in a drop down with the name '$dropDownName'
+                           COMPOSITE IN STEPS FILE When I change context to a [$state] element with the attribute '$attributeType'='$attributeValue'
+                           COMPOSITE IN STEPS FILE When I change context to a [$state] element with the name '$name'
+                           COMPOSITE IN STEPS FILE When I change context to an element by the CSS selector '$cssSelector'
+                           COMPOSITE IN STEPS FILE When I change context to an element by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I change context to an element with the attribute '$attributeType'='$attributeValue'
+                           COMPOSITE IN STEPS FILE When I change context to an element with the name '$name'
+                           COMPOSITE IN STEPS FILE When I change context to the page
+                           COMPOSITE IN STEPS FILE When I clear a field by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I clear a field by the xpath '$xpath' using keyboard
+                           COMPOSITE IN STEPS FILE When I clear a field with the name '$fieldName'
+                           COMPOSITE IN STEPS FILE When I clear a field with the name '$fieldName' using keyboard
+                           COMPOSITE IN STEPS FILE When I click on a button with the image src '$imageSrc'
+                           COMPOSITE IN STEPS FILE When I click on a button with the name '$buttonName'
+                           COMPOSITE IN STEPS FILE When I click on a link with the CSS selector '$cssSelector'
+                           COMPOSITE IN STEPS FILE When I click on a link with the URL '$URL'
+                           COMPOSITE IN STEPS FILE When I click on a link with the URL containing '$URLpart'
+                           COMPOSITE IN STEPS FILE When I click on a link with the URL containing '$URLpart' and the text '$text'
+                           COMPOSITE IN STEPS FILE When I click on a link with the text '$text'
+                           COMPOSITE IN STEPS FILE When I click on a link with the text '$text' and URL '$URL'
+                           COMPOSITE IN STEPS FILE When I click on all elements by xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I click on an element by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I click on an element with the attribute '$attributeType'='$attributeValue'
+                           COMPOSITE IN STEPS FILE When I click on an element with the text '$text'
+                           COMPOSITE IN STEPS FILE When I click on an image with the name '$imageName'
+                           COMPOSITE IN STEPS FILE When I click on an image with the src '$src'
+                           COMPOSITE IN STEPS FILE When I click on an image with the tooltip '$tooltipImage'
+                           COMPOSITE IN STEPS FILE When I enter '$text' in a field by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I enter '$text' in a field with the name '$fieldName'
+                           COMPOSITE IN STEPS FILE When I enter `$text` in field located `$locator` using keyboard
+                           COMPOSITE IN STEPS FILE When I find $comparisonRule '$elementsNumber' JSON elements by '$jsonPath' and for each element do$stepsToExecute
+                           COMPOSITE IN STEPS FILE When I hover a mouse over a button with the name '$buttonName'
+                           COMPOSITE IN STEPS FILE When I hover a mouse over a link with the URL '$URL'
+                           COMPOSITE IN STEPS FILE When I hover a mouse over a link with the text '$text'
+                           COMPOSITE IN STEPS FILE When I hover a mouse over an element with the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I hover a mouse over an image with the src '$src'
+                           COMPOSITE IN STEPS FILE When I hover a mouse over an image with the tooltip '$tooltipImage'
+                           COMPOSITE IN STEPS FILE When I perform right click on an element by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I save JSON element from response by JSON path `$jsonPath` to $scopes variable `$variableName`
+                           COMPOSITE IN STEPS FILE When I save a JSON element from '$json' by JSON path '$jsonPath' to $scopes variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I save a JSON element from response by JSON path '$jsonPath' to $scopes variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I select '$text' from a drop down by the xpath '$xpath'
+                           COMPOSITE IN STEPS FILE When I select '$text' from a drop down with the name '$dropDownName'
+                           COMPOSITE IN STEPS FILE When I select `$text` from drop down located `$locator`
+                           COMPOSITE IN STEPS FILE When I send HTTP $httpMethod to the relative URL '$relativeURL' with content: '$content'
+                           COMPOSITE IN STEPS FILE When I set '$attributeName' attribute value of the context element to the '$scopes' variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I set '$attributeName' attribute value of the element by $locator to the $scopes variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I set the number of elements found `$locator` to $scopes variable `$variableName`
+                           COMPOSITE IN STEPS FILE When I set the number of elements found by the JSON path '$jsonPath' to the $scopes variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I set the number of elements found by xpath '$xpath' to the '$scopes' variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I set the text found in search context to the '$scopes' variable '$variableName'
+                           COMPOSITE IN STEPS FILE When I wait until an element with the name '$elementName' appears
+                           COMPOSITE IN STEPS FILE When I wait until an element with the name '$elementName' contains the text '$text'
+                           COMPOSITE IN STEPS FILE When I wait until an element with the name '$elementName' disappears
+                           COMPOSITE IN STEPS FILE When I wait until an element with the name '$elementName' is stale
+                           COMPOSITE IN STEPS FILE When I wait until an element with the text '$text' appears
+                           COMPOSITE IN STEPS FILE When I wait until an element with the text '$text' disappears
+                           COMPOSITE IN STEPS FILE When I wait until an element with the xpath '$xpath' appears
+                           COMPOSITE IN STEPS FILE When I wait until an element with the xpath '$xpath' disappeares
+                           COMPOSITE IN STEPS FILE When I wait until elements with the name '$elementName' appear
+                           COMPOSITE IN STEPS FILE When I wait until the state of an element with the name '$elementName' becomes [$state]
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 21s
+14 actionable tasks: 2 executed, 12 up-to-date
