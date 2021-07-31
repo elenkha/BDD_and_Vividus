@@ -1,0 +1,50 @@
+2021-07-27 22:31:27,728 [main] INFO  org.vividus.report.MetadataLogger -
+------------------------------------------------------------
+ Configuration:
+   Suites                           web
+   Environments                     test
+   Profiles                         web/desktop/chrome
+------------------------------------------------------------
+ Profile:
+   Proxy                            OFF
+   Operating System                 Windows 10
+   Browser                          chrome
+   Remote Execution                 OFF
+------------------------------------------------------------
+ Suite:
+   Batch 1 Location                 story/web
+   Batch 1 Include Patterns         Walmart.story
+   Batch 1 Threads                  1
+   Global Meta Filters              groovy: (!layout || layout.contains('desktop')) && !skip && (true)
+------------------------------------------------------------
+ Environment:
+   Main Application Page            htts://walmart.com
+------------------------------------------------------------
+ Vividus:
+   vividus                          0.3.6
+   vividus-allure-adaptor           0.3.6
+   vividus-analytics                0.3.6
+   vividus-bdd-engine               0.3.6
+   vividus-extension-selenium       0.3.6
+   vividus-extension-visual-testing 0.3.6
+   vividus-http-client              0.3.6
+   vividus-plugin-rest-api          0.3.6
+   vividus-plugin-visual            0.3.6
+   vividus-plugin-web-app           0.3.6
+   vividus-reporter                 0.3.6
+   vividus-soft-assert              0.3.6
+   vividus-test-context             0.3.6
+   vividus-util                     0.3.6
+
+ Execution statistics:
+   ----------------------------------------
+                 Story   Scenario     Step
+   ----------------------------------------
+   Passed            1          5       26
+   Failed            0          0        0
+   Broken            0          0        0
+   Known Issue       0          0        0
+   Pending           0          0        0
+   Skipped           0          0        0
+   ----------------------------------------
+   TOTAL             1          5       26
