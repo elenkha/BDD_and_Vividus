@@ -1,3 +1,13 @@
+# NOTES
+
+Stories were run from CLI:
+ - file `src\main\resources\overriding.properties` is used to select story(s) to run
+ - command to run tests: `gradlew runStories`
+
+Allure report archives of succes executions can be found in files
+ - `allure.output.walmart.7z`
+ - `allure.output.task1.20210803.7z`
+
 # Vividus Starter
 
 The purpose of this repository is to help users start creating automated tests using Vividus.
